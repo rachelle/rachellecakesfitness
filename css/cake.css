@@ -18,11 +18,13 @@ body {
 }
 
 header {
-  height: 100%;
+  height: 500px;
+  padding-bottom: 100px;
   position: relative;
   overflow: hidden;
-  background-image: url("images/banner.png");
-  /* Image Credit: Unsplash.me */
+  background-image: url(../images/banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
@@ -86,7 +88,6 @@ img{
   color: #444;
   position:relative
 }
-
 .site a {
   color: #666;
   text-decoration: none;
@@ -124,3 +125,50 @@ nav .brand-logo {
 .navlinks:hover { 
   color: #FC7B60;
 }
+
+/* fitness plan section */
+.fitness-box { 
+  width: 450px;
+  height: 450px;
+}
+
+.fitness-text { 
+  text-align: center;
+}
+
+.fitness-icon { 
+  width: 400px;
+  height: 400px;
+ 
+}
+
+#fitnessPlan-feed { 
+  display: flex;
+  flex-wrap: wrap;
+  .fitnessPlan-item { 
+    margin: 0;
+   
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    
+    .plan-name{ 
+      position: absolute; 
+      bottom: 0;
+      left: 0;
+      right: 0;
+      color: #eee;
+      background: #333;
+      width: 100%;
+      
+      opacity: 0;
+      }
+    &:hover{ 
+      .plan-name{ 
+        opacity: 1;
+        max-height: 10%;
+        }
+      }
+    }
+  }
+
