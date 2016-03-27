@@ -239,6 +239,7 @@ figure.plan-snip h2 {
 }
 
 figure.plan-snip h2 span {
+  padding-top: 10px;
   font-weight: 800;
 }
 
@@ -257,10 +258,6 @@ figure.plan-snip a {
   bottom: 0;
   position: absolute;
   color: #ffffff;
-}
-
-figure.plan-snip:hover .plan-icon {
-  opacity: 0.3;
 }
 
 figure.plan-snip:hover figcaption h2 {
